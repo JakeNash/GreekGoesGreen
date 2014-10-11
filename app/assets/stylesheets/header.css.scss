@@ -3,6 +3,7 @@
 #header {
   text-align: center;
   vertical-align: middle;
+  background-image: image-url('gogreen-header-background.jpg');
   background-size: 100%;
   background-position: center;
   height: 125px;
@@ -22,5 +23,40 @@
   min-width: 840px;
   width: 100%;
   height: 40px;
+  background-color: #3F7F1A;
   box-shadow: 0px 0px 10px #231105;
+}
+
+.main-menu ul { //menu buttons as a whole
+  text-align: left;
+  min-width: 840px;
+  margin: 0;
+  padding: 0;
+}
+
+.main-menu ul li { //individual menu buttons
+  float: left;
+  color: White;
+  padding: 0 20px 0 20px;
+  height: 40px;
+  width: 90px;
+  list-style: none;
+  display: block;
+  line-height: 40px;
+  text-align: center;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.main-menu ul li:hover { //color change for menu buttons when hovering
+  background-color: #49E409;
+  color: Black;
+}
+
+.main-menu ul li a:visited { //overrides anchor visited color
+  color: White;
+}
+
+.main-menu ul a:visited li:hover { //overrides anchor visited color
+  color: Black;
 }

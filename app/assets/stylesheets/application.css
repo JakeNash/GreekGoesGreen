@@ -17,6 +17,7 @@
 /* Global text */
 
 html, body { /* main text */
+  background-color: #3D56DD;
   font-family: "Helvetica", sans-serif;
   min-width: 840px;
   margin: 0;
@@ -47,7 +48,7 @@ a { /* links */
 
 .info {
   float: left;
-  width: 70%;
+  width: 98%;
   overflow: visible;
   color: Black;
   padding: 1px 15px;
