@@ -1,14 +1,26 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-  <title>GreekGoesGreen</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <title><%= "GreekGoesGreen - " + @title %></title>
+  <%= stylesheet_link_tag    'application',
+      media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
+
 <body>
 
-<%= yield %>
+  <div id="container">
+
+    <%= render "shared/header" %>
+
+    <div id="content">
+      <%= yield %>
+    </div>
+
+  </div>
 
 </body>
+
 </html>

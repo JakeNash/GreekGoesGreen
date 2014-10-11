@@ -1,0 +1,15 @@
+<div id="header-container">
+  <a href="/"><div id="header">GreekGoesGreen</div></a>
+
+  <% #Main menu bar %>
+  <div class="main-menu">
+    <ul>
+      <%= link_to raw("<li class=\"main-menu-leftmost\">Home</li>"), root_path%>
+      <%= link_to raw("<li>Profiles</li>"), profile_index_path %>
+      <%= link_to raw("<li>GoGreen</li>"), quiz_index_path %>
+      <%= link_to raw("<li>GreenLinks</li>"), about_index_path %>
+      <%= link_to raw("<li>ScoreGuide</li>"), about_index_path %>
+      <%= link_to raw("<li class=\"main-menu-rightmost\">Search</li>"), profile_index_path %>
+    </ul>
+  </div>
+</div>
