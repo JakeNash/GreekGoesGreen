@@ -33,3 +33,4 @@ tags
 
 # Ignore the versioning
 Gemfile
+Gemfile.lock
