@@ -5,7 +5,7 @@
 <h1>Quiz</h1>
 <div class="form_row">
     <label for="theme"><h4>What electronic device(s) consume(s) the most power when in standby mode?</h4></label>
-    <% [ 'T.V.', 'Printer', 'Laptop', 'DVR with digital cable box', 'Toaster' ].each do |theme| %>
+    <% [ 'Television', 'Printer', 'Laptop', 'DVR with digital cable box', 'Toaster' ].each do |theme| %>
       <br><%= radio_button_tag 'theme', theme, @theme == theme %>
       <%= theme.humanize %>
     <% end %>
