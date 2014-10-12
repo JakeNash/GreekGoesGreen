@@ -2,7 +2,7 @@
 
 html, body { /* main text */
   background-color: #3D56DD;
-  font-family: "Helvetica", sans-serif;
+
   min-width: 840px;
   margin: 0;
   padding: 0;
@@ -21,7 +21,7 @@ html, body { /* main text */
 }
 
 h1, h2, h3 { /* headings */
-  font-family: "Calibri", sans-serif;
+
 }
 
 a { /* links */
@@ -46,7 +46,7 @@ a { /* links */
 /* Text and number entry boxes */
 
 input[type="text"], input[type="number"] [
-  font-family: "Helvetica", sans-serif;
+
 }
 
 /* Buttons */
