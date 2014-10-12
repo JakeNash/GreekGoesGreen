@@ -1,4 +1,48 @@
 <% @title="Quizzes" %>
 
+<div class="info">
+
 <h1>Quiz</h1>
-<p>Out of the whole greek system, your house contributes what percent of the electricity?<p>
+<div class="form_row">
+    <label for="theme"><h4>What electronic device(s) consume(s) the most power when in standby mode?</h4></label>
+    <% [ 'T.V.', 'Printer', 'Laptop', 'DVR with digital cable box', 'Toaster' ].each do |theme| %>
+      <br><%= radio_button_tag 'theme', theme, @theme == theme %>
+      <%= theme.humanize %>
+    <% end %>
+</div>
+
+<div class="form_row">
+    <label for="theme1"><h4>Each lightbulb you replace with a compact flourescent (CFL) bulb will save you how much money in energy over its lifetime?</h4></label>
+    <% [ '$1', '$2', '$3', '$4', '$5' ].each do |theme1| %>
+      <br><%= radio_button_tag 'theme1', theme1, @theme1 == theme1 %>
+      <%= theme1.humanize %>
+    <% end %>
+</div>
+
+<div class="form_row">
+    <label for="theme2"><h4>True of False: Caulking your windows and doors is the easiest way to save energy.</h4></label>
+    <% [ 'True', 'False' ].each do |theme2| %>
+      <br><%= radio_button_tag 'theme2', theme2, @theme2 == theme2 %>
+      <%= theme2.humanize %>
+    <% end %>
+</div>
+
+<div class="form_row">
+    <label for="theme3"><h4>How much energy could a tankless water heater save?</h4></label>
+    <% [ '5%', '10%', '20%', '30%', '40%' ].each do |theme3| %>
+      <br><%= radio_button_tag 'theme3', theme3, @theme3 == theme3 %>
+      <%= theme3.humanize %>
+    <% end %>
+</div>
+
+<div class="form_row">
+    <label for="theme4"><h4>True or False: Most of the energy consumed by dishwashers and washing machines is for moving parts.</h4></label>
+    <% [ 'True', 'False'].each do |theme4| %>
+      <br><%= radio_button_tag 'theme4', theme4, @theme4 == theme4 %>
+      <%= theme4.humanize %>
+    <% end %>
+</div>
+
+<%= button_to "Submit", quiz_show_path, :class => "button", method: :get %>
+
+</div>
