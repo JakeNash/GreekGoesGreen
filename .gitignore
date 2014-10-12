@@ -30,3 +30,6 @@ doc/
 .idea
 .secret
 tags
+
+# Ignore the versioning
+Gemfile

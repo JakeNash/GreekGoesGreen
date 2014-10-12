@@ -23,13 +23,13 @@ default: &default
 
 development:
   <<: *default
-  database: GreekGoesGreen
+  database: greekgoesgreen
 
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
   # When left blank, postgres will use the default role. This is
   # the same name as the operating system user that initialized the database.
-  username: GreekGoesGreen
+  username: greekgoesgreen
 
   # The password associated with the postgres role (username).
   password: lattice
@@ -54,7 +54,7 @@ development:
 
 test:
   <<: *default
-  database: GreekGoesGreen
-  username: GreekGoesGreen
+  database: greekgoesgreen
+  username: greekgoesgreen
   password: lattice
   host: localhost

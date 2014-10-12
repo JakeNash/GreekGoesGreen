@@ -1,0 +1,21 @@
+<% @title="Sign up" %>
+
+<div class="info">
+
+  <h1>Sign up</h1>
+
+  <strong>Email:</strong><br />
+  <%= text_field_tag 'email' %><br /><br />
+
+  <strong>Username:</strong><br />
+  <%= text_field_tag 'username' %><br /><br />
+
+  <strong>Which house are you in?</strong><br />
+  <%= text_field_tag 'house' %><br /><br />
+
+  <strong>Password:</strong><br />
+  <%= password_field_tag 'password' %><br /><br />
+
+  <%= button_to "Submit", users_show_path, :class => "button", method: :get %><br />
+
+</div>
