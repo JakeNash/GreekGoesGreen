@@ -1,8 +1,27 @@
+/*
+ * This is a manifest file that'll be compiled into application.css,
+ * which will include all the files listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets,
+ * vendor/assets/stylesheets, or vendor/assets/stylesheets of plugins,
+ * if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll
+ * appear at the bottom of the compiled file so the styles you add here
+ * take precedence over styles defined in any styles defined in the other
+ * CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
 /* Global text */
 
 html, body { /* main text */
   background-color: #3D56DD;
-
+  color: white;
+  font-family: "Helvetica", sans-serif;
   min-width: 840px;
   margin: 0;
   padding: 0;
@@ -21,10 +40,11 @@ html, body { /* main text */
 }
 
 h1, h2, h3 { /* headings */
-
+  font-family: "Calibri", sans-serif;
 }
 
 a { /* links */
+  color: #33689D;
   text-decoration: none;
 }
 
@@ -34,13 +54,93 @@ a { /* links */
   float: left;
   width: 98%;
   overflow: visible;
+  background-color: #EAEEF8;
   color: Black;
   padding: 1px 15px;
-  box-shadow: 0px 0px 10px #231105;
+  box-shadow: 0px 0px 10px #231105
 }
 
 .extra-bottom {
   padding-bottom: 20px;
+}
+
+/* Alerts and errors */
+
+.alert {
+  margin-top: 15px;
+}
+
+.alert.alert-login_success {
+  margin-top: 0;
+}
+
+.alert.alert-login_error {
+  margin-top: 0;
+  color: Red;
+}
+
+/* Text and number entry boxes */
+
+input[type="text"], input[type="number"] {
+  font-family: "Helvetica", sans-serif;
+}
+
+/* Buttons */
+
+input[type="submit"], .add_nested_fields {
+  background-color: #A34318;
+  padding: 5px 7px 5px 7px;
+  color: White;
+  font-size: 18px;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  box-shadow: 0 0 0.2em Black;
+  display: inline-block;
+  margin-top: 4px;
+}
+
+/* Tooltips */
+
+.question-mark-icon { /* icon used for tooltips */
+  vertical-align: text-top;
+  width: 17px;
+  height: 17px;
+}
+
+.exclamation-mark-icon { /* icon used for tooltips */
+  vertical-align: text-top;
+  width: 17px;
+  height: 17px;
+}
+
+a.tooltip { /* tooltip anchor itself */
+  position: relative;
+  display: inline;
+}
+
+.tooltip span { /* hidden values and defaults */
+  position: absolute;
+  width: 280px;
+
+  color: #FFFFFF;
+  background: #1A3959;
+  line-height: 20px;
+  text-align: left;
+  visibility: hidden;
+  outline: 1px dashed #011B3B;
+
+  padding: 5px;
+  left: 100%;
+  top: 50%;
+  margin-top: -15px;
+  margin-left: 15px;
+
+  z-index: 999;
+}
+
+.tooltip:hover span { /* visible when hovered */
+  visibility: visible;
 }
 
 /* Layout elements */
